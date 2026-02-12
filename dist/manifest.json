@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "dikstract",
+  "version": "1.0.0",
+  "description": "Discipline-enforcement extension that redirects blocked sites to motivational intervention",
+
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "storage"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_title": "dikstract",
+    "default_popup": "popup.html"
+  },
+
+  "options_page": "options.html",
+
+  "web_accessible_resources": [
+    {
+      "resources": ["block.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
