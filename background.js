@@ -5,6 +5,7 @@ const DB_VERSION = 1;
 
 //brr brr patapim
 //
+// tung tung tung tung tung sahur
 // One-time bypass store (in-memory)
 const temporaryAllow = new Set();
 
